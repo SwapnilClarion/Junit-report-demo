@@ -30,6 +30,7 @@
     "local.testAll": "node_modules/.bin/wdio wdio.local.conf.js",
     "testAll": "node_modules/.bin/wdio wdio.conf.js",
     "lint:eslint": "eslint --ext .ts --fix --fix-type suggestion,layout . && echo 'Lint complete.'",
+    "junit-report": "node_modules/.bin/junit-viewer --results=./reports/junit-results --save=./reports/junit-results.html ",
     "allure:report": "node_modules/.bin/allure generate --clean ./reports/allure-results -o ./reports/allure-report && open report"
   },
   "keywords": [
@@ -73,7 +74,8 @@
     "typescript": "^3.9.7",
     "wdio-chromedriver-service": "^5.0.2",
     "wdio-video-reporter": "^2.0.1",
-    "webdriverio": "^5.23.0"
+    "webdriverio": "^5.23.0",
+    "junit-viewer": "^4.11.1"
   },
   "dependencies": {
     "@wdio/cli": "^5.23.0",

@@ -105,13 +105,20 @@ exports.config = {
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter.html
   reporters: [
-        ['junit', {
-            outputDir: 'screenshots',
-            suiteNameFormat:'/[^a-z0-9]+/',
-            outputFileFormat: function(options) { // optional
-                return `results-${options.cid}.xml`
-            },
-        }]
+    ['junit', {
+      outputDir: './reports/junit-results/',
+      outputFileFormat: function(opts) { // optional
+          return `results-${opts.cid}.${opts.capabilities}.xml`
+      }
+    }
+  ],
+
+  ['allure', {
+      outputDir: './reports/allure-results/',
+      disableWebdriverStepsReporting: true,
+      disableWebdriverScreenshotsReporting: false,
+    }
+  ],
   ],
 
   //
