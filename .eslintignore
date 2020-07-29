@@ -1,0 +1,7 @@
+package-lock.json
+wdio.conf.js
+wdio.browserstack.conf.js
+wdio.local.conf.js
+wdio.jenkins.conf.js
+reports/
+node_modules/

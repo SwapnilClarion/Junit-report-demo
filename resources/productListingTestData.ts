@@ -1,0 +1,61 @@
+export const productListingTestData = {
+  Sorted_Product_list_Url:
+    'https://qa.ssense.com/en-us/men/socks?sort=price-asc',
+  IncorrectAccessoriesHeadingMessage: 'Heading on Accessories does not match',
+  IncorrectSocsHeadingMessage: 'Heading on Socs category page does not match',
+  AccessoriesPageHeading: 'Accessories',
+  SocsPageHeading: 'Socks',
+  Sale_Link_Display_Error:
+    'FAILED: Either Login link is not displayed OR User is logged in!! ',
+  sale_gender_male: 'men',
+  sale_gender_female: 'women',
+  go_to_sale: true,
+  go_to_plp: false,
+  PLPLowToHighSortErrorMsg:
+    'Product are not listed in ascending order based on current active prices on PLP.',
+  ArrayPLPOptions: ['men', 'women', 'category', 'brand'],
+  plp_men_translations: ['MEN', 'HOMMES', 'メンズ', '男士'],
+  plp_women_translations: ['WOMEN', 'FEMMES', 'ウィメンズ', '女士'],
+  sale_plp_men_url: ['/men/sale', '/hommes/soldes'],
+  sale_plp_women_url: ['/women/sale', '/femmes/soldes'],
+  // PLP Sorting Options
+
+  english_sortLnks: [
+    'Latest arrivals',
+    'Trending',
+    'Price: Low to high',
+    'Price: High to low',
+    'Discount: Low to high',
+    'Discount: High to low',
+    'Relevance',
+  ],
+  french_sortLnks: [
+    'Nouveautés',
+    'Les plus populaires',
+    'Prix: croissant',
+    'Prix: décroissant',
+    'Rabais: faible à élevé',
+    'Rabais: élevé à faible',
+    'Pertinence',
+  ],
+  japanese_sortLnks: [
+    '新着順',
+    '人気順',
+    '関連性',
+    '価格：安い順',
+    '価格：高い順',
+    '割引：安い順',
+    '割引：高い順',
+  ],
+  chinese_sortLnks: [
+    '最新上架',
+    '人气潮品',
+    '相关性',
+    '价格：从低到高',
+    '价格：从高到低',
+    '折扣：从低到高',
+    '折扣：从高到低',
+  ],
+  search_plp_product: 'adidas',
+  PLP_PAGE_LOADING_ERROR: 'Product Listing page is not loaded yet',
+};

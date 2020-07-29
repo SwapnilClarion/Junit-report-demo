@@ -1,0 +1,67 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "webdriverio/wdio": true,
+    "mocha": true
+  },
+  "plugins": ["webdriverio","@typescript-eslint"],
+  "extends": [
+    "airbnb-base/legacy",
+    "prettier",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:import/typescript"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "comma-dangle": ["error", "always-multiline"],
+    "max-len": ["error", { "code": 140 }],
+    "class-methods-use-this": 0,
+
+    "no-warning-comments": [
+      "error",
+      { "terms": ["todo", "fixme", "any other term"], "location": "anywhere" }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "never", "prev": "*", "next": "return" }
+    ],
+    "max-lines-per-function": 0,
+    "no-console": 1,
+    "mocha-no-side-effect-code": 0,
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-backbone-get-set-outside-model": 0,
+    "no-duplicate-case": 2,
+    "padded-blocks": ["error", "never"],
+    "consistent-return": "off",
+    "no-var": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-empty": "error",
+    "eqeqeq": ["error", "always"],
+    "no-else-return": ["error", { "allowElseIf": false }],
+    "no-empty-function": "error",
+    "no-unused-vars": "error",
+    "default-case": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

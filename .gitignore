@@ -1,0 +1,12 @@
+node_modules/
+debug.log
+reports
+!screenshots/.gitkeep 
+ssense-e2e-automation.code-workspace
+wdio.config.js
+Dockerfile
+Jenkinsfile
+CODEOWNERS
+screenshots
+package-lock.json
+
